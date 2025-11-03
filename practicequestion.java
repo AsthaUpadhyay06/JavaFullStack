@@ -12,6 +12,7 @@
  // write a program to print first even number
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class practicequestion {
 //    public static void main(String[] args) {
@@ -224,8 +225,8 @@ public class practicequestion {
 // }
 
 
-public static void main(String[] args) {
-  int [] arr={1,2,3,4,5,666,56,43,455};
+// public static void main(String[] args) {
+//   int [] arr={1,2,3,4,5,666,56,43,455};
   // int temp;
 //   for(int i=0;i<arr.length-1;i++){
 //     for(int j=i+1;i<arr.length;j++){
@@ -234,16 +235,38 @@ public static void main(String[] args) {
 //   arr[i]=arr[i+1];
 //   arr[i+1]=temp;
 //   }
-Arrays.sort(arr);
+// Arrays.sort(arr);
 
-//  }
+// //  }
  
-//   }
-   for(int element : arr){
-    System.out.println(element);
-   }
+// //   }
+//    for(int element : arr){
+//     System.out.println(element);
+//    }
+// // }
 // }
-}
+
+public static void main(String[] args) {
+  System.out.println("enter number of terms");
+  Scanner sc=new Scanner(System.in);
+  int n= sc.nextInt();
+  int next;
+  int first=0;
+  int second=1;
+  int sum=0;
+System.out.println(first);
+System.out.println(second);
+  for(int i=0;i<n;i++){
+  next=first+ second;
+  System.out.println(""+ next);
+  sum=sum+next;
+  
+ 
+  first=second;
+  second=next;}
+   System.out.println( "sum is " + sum);
+  }
+
 }
   
     
