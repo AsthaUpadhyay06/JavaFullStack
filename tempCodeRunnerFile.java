@@ -1,2 +1,1 @@
-obj.setName("astha");
-        obj.setID(45);
+obj.meth2();
