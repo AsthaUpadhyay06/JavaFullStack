@@ -41,31 +41,34 @@
 // }
 
 
- class Animal{
-    String name;
-    int age;
+//  class Animal{
+//     String name;
+//     int age;
      
-    public void animal( String n,int a){
-        name=n;
-        age=a;
-        System.out.println("name " + name + " age " + age);
+//     public void animal( String n,int a){
+//         name=n;
+//         age=a;
+//         System.out.println("name " + name + " age " + age);
        
-    }
- }
+//     }
+//  }
 
- class Dog extends  Animal{
-    public void dog(){
-        System.out.println("barkingggg");
-    }
- }
-public class inheritance{
-    public static void main(String[] args) {
-        Animal obj=new Animal();
-        obj.animal("Rabit", 3);
+//  class Dog extends  Animal{
+//     public void dog(){
+//         System.out.println("barkingggg");
+//     }
+//  }
+// public class inheritance{
+//     public static void main(String[] args) {
+//         Animal obj=new Animal();
+//         obj.animal("Rabit", 3);
 
-        Dog obj1=new Dog();
-        obj1.animal("dog", 4);
-        obj1.dog();
+//         Dog obj1=new Dog();
+//         obj1.animal("dog", 4);
+//         obj1.dog();
 
-    }
-}
+//     }
+// }
+
+
+

@@ -1,36 +1,36 @@
-//     class MyEmployee{
-//         private int id ;
-//         private String name;
-//         public MyEmployee( int id,String name){
-//           this. id=id;
-//            this. name=name;
-//         }  
-//          public  String getName(){
-//            return name;
-//          }
-//          public  void setName(String n){
-//            name=n;
-//          }
-//          public int  getId(){
-//            return id;
-//          }
-//          public  void setID(int i){
-//             id=i;
-//          }
+    class MyEmployee{
+        private int id ;
+        private String name;
+        public MyEmployee( int id,String name){
+          this. id=id;
+           this. name=name;
+        }  
+         public  String getName(){
+           return name;
+         }
+         public  void setName(String n){
+           name=n;
+         }
+         public int  getId(){
+           return id;
+         }
+         public  void setID(int i){
+            id=i;
+         }
 
 
-//     }
+    }
   
-// public class constructors {
-//     public static void main(String[] args) {
-//         MyEmployee obj=new MyEmployee(34,"astha");
-//         // obj.setName("astha");
-//         // obj.setID(45);
-//         System.out.println(obj.getId());
-//         System.out.println(obj.getName());
+public class constructors {
+    public static void main(String[] args) {
+        MyEmployee obj=new MyEmployee(34,"astha");
+        obj.setName("astha");
+        obj.setID(45);
+        System.out.println(obj.getId());
+        System.out.println(obj.getName());
         
-//     }
-// }
+    }
+}
     
 
 
