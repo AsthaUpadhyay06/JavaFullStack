@@ -38,41 +38,66 @@
 // }
     
 
-//Method overriding
+// Method overriding
 
- class A{
-    public void meth1(){
-        System.out.println("iam method1 of class A");
-    }
-    public void meth2(){
-        System.out.println("iam method2 of class A");
-    }
- }
+//  class A{
+//     public void meth1(){
+//         System.out.println("iam method1 of class A");
+//     }
+//     public void meth2(){
+//         System.out.println("iam method2 of class A");
+//     }
+//  }
 
- class B extends A{
-    @Override
-    public void meth2(){
-        System.out.println("iam method2 of class B");
-    }
-    public void meth3(){
-        System.out.println("iam method3 of class B");
-    }
+//  class B extends A{
+//     @Override
+//     public void meth2(){
+//         System.out.println("iam method2 of class B");
+//     }
+//     public void meth3(){
+//         System.out.println("iam method3 of class B");
+//     }
  
+//  }
+// public class inheritanceconstructor{
+//     public static void main(String[] args) {
+//         A obj=new B();
+//         B b=new B();
+//         // obj.meth2();
+//         b.meth2();
+//         obj.meth2();
+//         b.meth1();
+
+//     }
+// }
+
+
+
+// // Dynamic Dispatch
+
+
+ class Phone {
+     public void music(){
+         System.out.println("muisc.....");
+     }
+     public void listening(){
+        System.out.println("listeninggg");
+     }
+ }
+ class smartphone extends Phone{
+    public void listenmusic(){
+         System.out.println("muisc.....");
+     }
+     public void listening(){
+        System.out.println("listeninggg music  ");
+     }
  }
 public class inheritanceconstructor{
     public static void main(String[] args) {
-        A obj=new B();
-        B b=new B();
-        // obj.meth2();
-        b.meth2();
-        obj.meth2();
-        b.meth1();
-
+         Phone p1=new smartphone();
+         p1.listening();
+         p1.music();
+        //  p1.listeningmusic(); // not allowed
+        
     }
 }
-
-
-
-//
-
-
