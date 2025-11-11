@@ -28,60 +28,61 @@
 
 
 // Real-world style Rectangle
-// class Rectangle {
-//     protected double length;
-//     protected double breadth;
+class Rectangle {
+    protected double length;
+    protected double breadth;
 
-//     public Rectangle(double length, double breadth) {
-//         this.length = length;
-//         this.breadth = breadth;
-//     }
+    public Rectangle(double length, double breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
 
-//     public double getArea() {
-//         return length * breadth; // Area of rectangle
-//     }
+    public double getArea() {
+        return length * breadth; // Area of rectangle
+    }
 
-//     public double getPerimeter() {
-//         return 2 * (length + breadth);
-//     }
-// }
+    public double getPerimeter() {
+        return 2 * (length + breadth);
+    }
+}
 
-// // Cuboid extending Rectangle (real-world: box based on a rectangle base)
-// class Cuboid extends Rectangle {
-//     private double height;
+// Cuboid extending Rectangle (real-world: box based on a rectangle base)
+class Cuboid extends Rectangle {
+    private double height;
 
-//     public Cuboid(double length, double breadth, double height) {
-//         super(length, breadth); // reuse rectangle properties
-//         this.height = height;
-//     }
+    public Cuboid(double length, double breadth, double height) {
+        super(length, breadth); // reuse rectangle properties
+        this.height = height;
+    }
 
-//     public double getVolume() {
-//         return length * breadth * height;
-//     }
+    public double getVolume() {
+        return length * breadth * height;
+    }
 
-//     public double getSurfaceArea() {
-//         return 2 * (length*breadth + breadth*height + height*length);
-//     }
+    public double getSurfaceArea() {
+        return 2 * (length*breadth + breadth*height + height*length);
+    }
 
-// }
+}
 
-// // Testing them
+// Testing them
 
     
 
 
 
-//   public class inheritancequestion{
+  public class inheritancequestion{
     
-//         public static void main(String[] args) {
-//         Rectangle tableTop = new Rectangle(5, 3);
-//         System.out.println("Table Top Area: " + tableTop.getArea());
-//         System.out.println("Table Top Perimeter: " + tableTop.getPerimeter());
+    
+        public static void main(String[] args) {
+        Rectangle tableTop = new Rectangle(5, 3);
+        System.out.println("Table Top Area: " + tableTop.getArea());
+        System.out.println("Table Top Perimeter: " + tableTop.getPerimeter());
 
-//         Cuboid cardboardBox = new Cuboid(5, 3, 4);
-//         System.out.println("\nCardboard Box Volume: " + cardboardBox.getVolume());
-//         System.out.println("Cardboard Box Surface Area: " + cardboardBox.getSurfaceArea());
-//     }
-//   }
+        Cuboid cardboardBox = new Cuboid(5, 3, 4);
+        System.out.println("\nCardboard Box Volume: " + cardboardBox.getVolume());
+        System.out.println("Cardboard Box Surface Area: " + cardboardBox.getSurfaceArea());
+    }
+  }
 
 
