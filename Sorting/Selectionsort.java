@@ -54,22 +54,49 @@
 
 //COMMON ELEMENTSS
 
+// import java.util.Arrays;
+
+// public class Selectionsort {
+//     public static void main(String[] args) {
+
+//         int[] arr = {3, 1, 2, 1, 1, 4, 5, 5};
+//         int[] brr = {6, 1, 1, 4, 4, 2, 8, 2};
+
+//         Arrays.sort(arr);
+//         Arrays.sort(brr);
+
+//         System.out.println(Arrays.toString(arr));
+//         System.out.println(Arrays.toString(brr));
+//         int i=0;
+//         int j=0;
+//         while(i<arr.length && j<brr.length ){
+//             if(arr[i]==brr[j]){
+//                 System.out.print(arr[i] + " ");
+//                 i++;
+//                 j++;
+//             }
+//             else if(arr[i]<brr[i]){
+//                 i++;
+//             }
+//             else{
+//                 j++;
+//             }
+//         }
+      
+//     }
+// }
+
+
+
 import java.util.Arrays;
 
 public class Selectionsort {
     public static void main(String[] args) {
 
-        int[] arr = {3, 1, 2, 1, 1, 4, 5, 5};
-        int[] brr = {6, 1, 1, 4, 4, 2, 8, 2};
-
-        Arrays.sort(arr);
-        Arrays.sort(brr);
-
-        System.out.println(Arrays.toString(arr));
-        System.out.println(Arrays.toString(brr));
-        int i=0;
-        int j=0;
-        while(i<arr.length && j<brr.length ){
+       int[] arr = {1, 2, 2, 4, 5};
+       int[] brr = {2, 3, 4, 6};
+ int i=0,j=0;
+     while(i<arr.length-1 && j<brr.length ){
             if(arr[i]==brr[j]){
                 System.out.print(arr[i] + " ");
                 i++;
@@ -81,7 +108,8 @@ public class Selectionsort {
             else{
                 j++;
             }
+     
         }
-      
     }
 }
+
